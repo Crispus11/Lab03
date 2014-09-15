@@ -5,15 +5,31 @@ using CSC2110::ListArrayIterator;
 using namespace std;
 
 
+/*void Password::guess(try_password, num_matches)//Needs Work!////////////////////////
+{
+	cout << "You Are In Guess Function\n";
+}
+*/
+
+/*
+String* Password::getOriginalWord(index)//Needs Work!////////////////////////
+{
+	return word;
+}
+*/
+void Password::displayViableWords()//Needs Work!////////////////////////
+{
+	cout << "You Are In Display Words Function\n";
+	
+}
 
 
+int Password::getNumberOfPasswordsLeft()//Needs Work!////////////////////////
+{
+	int wordsLeft = 0;
 
-
-
-
-
-
-
+	return wordsLeft;
+}
 
 int Password::bestGuess()
 {
