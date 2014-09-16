@@ -38,7 +38,7 @@ class Password
 	   Password();
 	   //destructor, delete the individual words
 	   ~Password();
-	   void addWord(String* word);
+	   void addWord(String* fh);
 	   int bestGuess();
 	   int getNumberOfPasswordsLeft();
 	   void displayViableWords();
