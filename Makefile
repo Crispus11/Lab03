@@ -1,14 +1,14 @@
 AutomatedMakefile = am
 CC = g++
 
-FILES = 
-EXECUTABLE = 
+FILES = PasswordDriver.o Password.o
+EXECUTABLE = Password.exe
 
 PROJECT_PATH = $(PROJECT_DIR)
 
-INC_DIRS = 
-LIB_DIRS = 
-LIBS = 
+INC_DIRS = -I$(PROJECT_PATH)/CSC2110/
+LIB_DIRS = -L$(PROJECT_PATH)/CSC2110/
+LIBS = -lCSC2110
 
 COMPILE = $(CC) $(INC_DIRS) -c
 LINK = $(CC) $(LIB_DIRS) -o

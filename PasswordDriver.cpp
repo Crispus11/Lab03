@@ -12,15 +12,6 @@ using CSC2110::Keyboard;
 using namespace std;
 
 
- Password::~Password()
- {
- 
- };
- 
- Password::Password()
- {
- 
- };
  
 
 void addWords(Password* fh)

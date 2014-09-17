@@ -31,7 +31,6 @@ class Password
       //a private helper method to report the number of character matches between two Strings
       int getNumMatches(String* curr_word, String* word_guess);
 
-	 	 //int try_password, num_matches;
 		 
    public:
 	   //constructor

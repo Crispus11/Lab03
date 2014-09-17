@@ -3,33 +3,49 @@ using CSC2110::ListArrayIterator;
 
 #include <iostream>
 using namespace std;
-
-
-void Password::guess(int try_password, int num_matches)//Needs Work!////////////////////////
+ Password::Password()
+ {
+	viable_words=new ListArray<String>;
+	all_words=new ListArray<String>;
+	len = 0;
+	int index = 0;
+ }
+ 
+ Password::~Password()
+ {
+  //delete the individual words
+  delete[] viable_words;
+  delete[] all_words;
+  
+  len = 0;
+ }
+ 
+ void Password::addWord(String* word)
 {
+//add a word to the list of possible passwords
+		viable_words->add(word);
+		all_words->add(word);
+		
+}
+
+
+
+
+String* Password::getOriginalWord(int index)
+{
+//get a word from the original list of all passwords, 1-based	
+	ListArrayIterator<String>*::next();
+}
+
+void Password::displayViableWords()
+{
+//display the current list of possible passwords
+	for(i = 1; i <= viable_words; i++)
+	{
+		cout << viable_words[i]; 
 	
+	}
 }
-
-
-String* Password::getOriginalWord(int index)//Needs Work!////////////////////////
-{
-	
-}
-
-void Password::displayViableWords()//Needs Work!////////////////////////
-{
-
-	
-}
-
-void Password::addWord(String* word)
-{
-
-}
-
-
-
-
 
 int Password::getNumMatches(String* curr_word, String* word_guess)
 {
@@ -38,9 +54,16 @@ int Password::getNumMatches(String* curr_word, String* word_guess)
 
 int Password::getNumberOfPasswordsLeft()//Needs Work!////////////////////////
 {
-	int wordsLeft = 0;
 
-	return wordsLeft;
+
+}
+
+void Password::guess(int try_password, int num_matches)//Needs Work!////////////////////////
+{
+/*should call at least one private helper method to count the number of
+ character matches between two Strings. You should use the
+ ListArrayIterator rather than a for loop wherever appropriate.*/
+		
 }
 
 int Password::bestGuess()
